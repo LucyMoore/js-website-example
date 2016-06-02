@@ -1,0 +1,22 @@
+body{
+	font-family: Arial;
+	background-image: url(img/valley.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#main{
+	width: 90%;
+	
+}
+
+#header{
+	width: 50%;
+	text-align: center;
+
+}
+
+#content{
+
+}
+
