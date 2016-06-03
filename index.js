@@ -1,15 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Menu from './components/Menu'
+
 import PageHeader from './components/Page-header'
-
-
+import Content from './components/Page-content'
 
 ReactDOM.render(
   
 <div>
 	<PageHeader />
-	<Menu />
+	<div>
+		<Content />
+	</div>
 </div>,
 
  document.getElementById('main')

@@ -7,16 +7,31 @@ body{
 
 #main{
 	width: 90%;
+	border: 1px solid black;
 	
 }
 
 #header{
-	width: 50%;
+	
 	text-align: center;
+	border: 1px solid black;
 
 }
 
 #content{
-
+	border: 1px solid black;
 }
 
+#menu{
+	width: 150px;
+	border: 1px solid black;
+}
+
+#lower{
+	display: flex;
+}
+
+button{
+	width:150px;
+	height: 50px;
+}
