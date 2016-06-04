@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom'
 import Button from './Button'
 import Menu from './Menu'
 
-
+function test(e){
+	console.log(e.target)
+}
 
 module.exports = class Content extends React.Component {
 	constructor(props){
@@ -12,6 +14,7 @@ module.exports = class Content extends React.Component {
 	}
 
 	update(e){
+		console.log(e.target.className)
 		var toDisplay = e.target.className
 		if(toDisplay === 'home'){
 			this.setState({content: 'home'})
@@ -25,32 +28,7 @@ module.exports = class Content extends React.Component {
 	    return (
 	    	<div id="lower">
 		    	<div id="menu">
-			    	<Button className="home" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="map" txt="Map" onClick={this.update.bind(this)}  />
-			    	<Button className="18th" txt="18th Dynasty" onClick={this.update.bind(this)}/>
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-
-			    	<Button className="19th" txt="19th Dynasty" onClick={this.update.bind(this)}/>
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-
-			    	<Button className="20th" txt="20th Dynasty" onClick={this.update.bind(this)}/>
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-
-			    	<Button className="21st" txt="21st Dynasty" onClick={this.update.bind(this)}/>
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-			    	<Button className="hidden" txt="Home" onClick={this.update.bind(this)} />
-
+			    <Menu onClick={test}/>
 		    	</div>
 		    	<div id="content">
 		    		{this.state.content}
