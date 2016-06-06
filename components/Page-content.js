@@ -14,19 +14,28 @@ module.exports = class Content extends React.Component {
     	this.state={content: 'start'}
 	}
 
+	update(e){
+		if(e.currentTarget.name){
+		
+		}
+
+	}
+
 	mount(e){
 		if(e.currentTarget.name === '18th'){
-			this.setState()
+			this.setState({content: <h1>18th Dynasty</h1>})
 			document.getElementById("one").className = "visible";
 			document.getElementById("two").className = "hidden";
 			document.getElementById("three").className = "hidden";
 		}
 		if(e.currentTarget.name === '19th'){
+			this.setState({content: <h1>19th Dynasty</h1>})
 			document.getElementById("one").className = "hidden";
 			document.getElementById("two").className = "visible";
 			document.getElementById("three").className = "hidden";
 		}
 		if(e.currentTarget.name === '20th'){
+			this.setState({content: <h1>20th Dynasty</h1>})
 			document.getElementById("one").className = "hidden";
 			document.getElementById("two").className = "hidden";
 			document.getElementById("three").className = "visible";
@@ -38,15 +47,15 @@ module.exports = class Content extends React.Component {
 	    return (
 	    	<div id="lower">
 		    	<div id="side-menu">
-				    <button name='home' className='buttonLarge' onClick={this.mount.bind('this')}>home</button>
-						<button name='map' className='buttonLarge' onClick={this.mount.bind('this')}>map</button>
-						<button name='18th' className='buttonLarge' onClick={this.mount.bind('this')}>18th Dynasty</button>
+				    <button name='home' className='buttonLarge' onClick={this.update.bind(this)}>home</button>
+						<button name='map' className='buttonLarge' onClick={this.update.bind(this)}>map</button>
+						<button name='18th' className='buttonLarge' onClick={this.mount.bind(this)}>18th Dynasty</button>
 						<Menu18 id='one' type={menuType} className='hidden' />
-						<button name='19th' className='buttonLarge' onClick={this.mount.bind('this')}>19th Dynasty</button>
+						<button name='19th' className='buttonLarge' onClick={this.mount.bind(this)}>19th Dynasty</button>
 						<Menu19 id='two' type={menuType} className='hidden' />
-						<button name='20th' className='buttonLarge' onClick={this.mount.bind('this')}>20th Dynasty</button>
+						<button name='20th' className='buttonLarge' onClick={this.mount.bind(this)}>20th Dynasty</button>
 						<Menu20 id='three' type={menuType} className='hidden' />
-						<button name='20th' className='buttonLarge' onClick={this.mount.bind('this')}>21th Dynasty</button>
+						<button name='20th' className='buttonLarge' onClick={this.mount.bind(this)}>21th Dynasty</button>
 						<Menu20 id='three' type={menuType} className='hidden' />
 					</div>
 		    	<div id="content">
