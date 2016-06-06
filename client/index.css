@@ -32,12 +32,15 @@ body{
 
 .buttonLarge{
 	width:150px;
-	height: 50px;
+	height: 50px; 
+	background-color: #B0A74A;
+
 }
 .buttonSmall{
 	width:125px;
 	height: 40px;
 	float: right;
+	background-color: #FAF18C;
 }
 
 .hidden{
@@ -45,5 +48,5 @@ body{
 }
 
 .visible{
-	
+
 }
