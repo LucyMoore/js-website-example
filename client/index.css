@@ -12,7 +12,6 @@ body{
 }
 
 #header{
-
 	text-align: center;
 	border: 1px solid black;
 
@@ -22,7 +21,7 @@ body{
 	border: 1px solid black;
 }
 
-#menu{
+#side-menu{
 	width: 150px;
 	border: 1px solid black;
 }
@@ -31,7 +30,7 @@ body{
 	display: flex;
 }
 
-button{
+.buttonLarge{
 	width:150px;
 	height: 50px;
 }
@@ -43,4 +42,8 @@ button{
 
 .hidden{
 	display: none;
+}
+
+.visible{
+	
 }
