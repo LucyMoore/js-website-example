@@ -11,12 +11,15 @@ var menuType = ''
 module.exports = class Content extends React.Component {
 	constructor(props){
     	super(props)
-    	this.state={content: 'start'}
+    	this.state={content: 'start', img: <img src='' />}
 	}
 
 	update(e){
-		if(e.currentTarget.name){
-		
+		if(e.currentTarget.name === 'home'){
+			this.setState({content: 'this is the home page with the home information'})
+		}
+		else if(e.currentTarget.name === 'map'){
+			this.setState({content: <img src='img/map.jpg'></img>})
 		}
 
 	}
