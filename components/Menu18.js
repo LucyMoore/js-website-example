@@ -5,13 +5,11 @@ import Button from './Button'
 
 module.exports = class Menu18 extends React.Component {
 	render (){
-		console.log(this.props.type, 'type')
-
 	    return (
 	    	<div id={this.props.id} className={this.props.className}>
-		    	<Button className='buttonSmall' txt="Hatshepsut"></Button>
-		    	<Button className='buttonSmall' txt="Thutmose III">tut</Button>
-		    	<Button className='buttonSmall' txt="Thutmose IV">tut</Button>
+		    	<Button className='buttonSmall hatshepsut' txt="Hatshepsut" onClick={this.props.onClick}></Button>
+		    	<Button className='buttonSmall thutmose3' txt="Thutmose III">tut</Button>
+		    	<Button className='buttonSmall thutmose4' txt="Thutmose IV">tut</Button>
 	    	</div>
 	   	)
 

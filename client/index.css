@@ -7,23 +7,21 @@ body{
 
 #main{
 	width: 90%;
-	border: 1px solid black;
 
 }
 
 #header{
 	text-align: center;
-	border: 1px solid black;
 
 }
 
 #content{
-	border: 1px solid black;
+	padding: 0 30px 30px 30px;
+	font-size: 20px;
 }
 
 #side-menu{
 	width: 150px;
-	border: 1px solid black;
 }
 
 #lower{
@@ -52,6 +50,7 @@ body{
 }
 
 img{
+	border: 2px solid brown;
 	height: 600px;
 	width: 900px;
 }
